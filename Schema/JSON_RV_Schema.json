@@ -1,31 +1,52 @@
 {
-    "$schema":"http://json-schema.org/draft-07/schema",
-    "$ref":"#/definitions/JsonRv",
-    "definitions":{
-        "JsonRv":{
-            "title":"JsonRv",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$ref": "#/definitions/JsonRv",
+    "definitions": {
+        "JsonRv": {
+            "title": "JsonRv",
             "properties": {
-                "biblioteca":{"type":"string"},
-                "instanciacao":{
-                    "type":"array","items":{"$ref":"#/definitions/instanciacao.items"},
-                    "minItems":0,"additionalItems":true
+                "biblioteca": {
+                    "type":"string"
+                },
+                "instanciacao": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/instanciacao.items"
+                    },
+                    "minItems": 0,
+                    "additionalItems": true
                 }
             }
         },
-        "instanciacao.items":{
-            "type":"object",
-            "properties":{
-                "modelo":{"type":"string"},
-                "objeto":{"type":"string"},
-                "posicao":{"$ref":"#/definitions/instanciacao.orientacao"},
-                "rotacao":{"$ref":"#/definitions/instanciacao.orientacao"}
+        "instanciacao.items": {
+            "type": "object",
+            "properties": {
+                "modelo": {
+                    "type":"string"
+                },
+                "objeto": {
+                    "type":"string"
+                },
+                "posicao": {
+                    "$ref":"#/definitions/instanciacao.orientacao"
+                },
+                "rotacao": {
+                    "$ref":"#/definitions/instanciacao.orientacao"
+                }
             }
         },
-        "instanciacao.orientacao":{
-            "type":"array","items":[
-                {"type":"number"},
-                {"type":"number"},
-                {"type":"number"}
+        "instanciacao.orientacao": {
+            "type": "array",
+            "items": [
+                {
+                    "type":"number"
+                },
+                {
+                    "type":"number"
+                },
+                {
+                    "type":"number"
+                }
             ]
         }
     }
