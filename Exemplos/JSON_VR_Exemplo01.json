@@ -1,0 +1,35 @@
+{
+	"biblioteca": "Models/",
+	"instanciacao": [
+		{
+			"modelo": "para_raios_t1",
+			"objeto": "pr1_01",
+			"posicao": [0.0, 0.5, 1.0], 
+			"rotacao": [0.0, 45.0, 0.0]
+		},
+		{
+			"modelo": "para_raios_t1",
+			"objeto": "pr1_02",
+			"posicao": [2.0, 0.5, 1.0], 
+			"rotacao": [0.0, 0.0, 0.0]
+		},
+		{
+			"modelo": "para_raios_t1",
+			"objeto": "pr1_03",
+			"posicao": [-2.0, 0.5, 1.0], 
+			"rotacao": [0.0, 0.0, 0.0]
+		},
+		{
+			"modelo": "para_raios_t2",
+			"objeto": "pr2_04",
+			"posicao": [1.0, 0.5, -1.0], 
+			"rotacao": [0.0, 0.0, 0.0]
+		},
+		{
+			"modelo": "para_raios_t2",
+			"objeto": "pr2_05",
+			"posicao": [-1.0, 0.5, -1.0], 
+			"rotacao": [0.0, 0.0, 0.0]
+		}
+	]
+}
