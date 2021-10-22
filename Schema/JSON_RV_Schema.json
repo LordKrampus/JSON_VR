@@ -9,7 +9,7 @@
             
             "properties": {
                 "biblioteca": {
-                    "type":"string",
+                    "type": "string",
                     "description": "Caminho de biblioteca para a pesquisa de modelos",
                     
                     "default": "",
