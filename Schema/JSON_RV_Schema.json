@@ -5,13 +5,21 @@
     "definitions": {
         "JsonRv": {
             "title": "JsonRv",
+            "description": "Estrutura referencial de instâncias 3D, baseada em JSON para ambientes de RV",
             
             "properties": {
                 "biblioteca": {
-                    "type":"string"
+                    "type":"string",
+                    "description": "Caminho de biblioteca para a pesquisa de modelos",
+                    
+                    "default": "",
+                    "examples": [
+                        "Models/"
+                    ]
                 },
                 "instanciacao": {
                     "type": "array",
+                    "description": "Identificação de objetos de modelos para isntanciação dos os.",
                     
                     "items": {
                         "$ref": "#/definitions/instanciacao.items"
@@ -19,38 +27,55 @@
                     "minItems": 0,
                     "additionalItems": true
                 }
-            }
+            },
+            "required": ["instanciacao", "biblioteca"]
         },
         "instanciacao.items": {
             "type": "object",
+            "description": "Atributos de uma instancia 3D.",
             
             "properties": {
                 "modelo": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Identificação do modelo 3D (objeto prefabrico 3D da biblioteca) correspondente."
                 },
                 "objeto": {
-                    "type": "string"
+                    "type": "string",
+                    "drescricao": "Nome de identificação do objeto (instância) de modelo 3D para cenário."
                 },
                 "posicao": {
-                    "$ref": "#/definitions/instanciacao.orientacao"
+                    "$ref": "#/definitions/instanciacao.orientacao",
+                    "description": "Configuração de orientação de posicionamento no cenário de ambiente 3D."
                 },
                 "rotacao": {
-                    "$ref": "#/definitions/instanciacao.orientacao"
+                    "$ref": "#/definitions/instanciacao.orientacao",
+                    "description": "Configuração de orientação de rotação no cenário de ambiente 3D."
                 }
-            }
+            },
+            "required": ["modelo", "objeto", "posicao", "rotacao"]
         },
         "instanciacao.orientacao": {
             "type": "array",
+            "description": "Atributos para configuração de aspectos de orientação (x, y e z) sobre objeto 3D em cenário.",
             
             "items": [
                 {
-                    "type": "number"
+                    "type": "number",
+                    "title": "x",
+                    
+                    "default": 0.0
                 },
                 {
-                    "type": "number"
+                    "type": "number",
+                    "title": "y",
+                    
+                    "default": 0.0
                 },
                 {
-                    "type": "number"
+                    "type": "number",
+                    "title": "z",
+                    
+                    "default": 0.0
                 }
             ]
         }
