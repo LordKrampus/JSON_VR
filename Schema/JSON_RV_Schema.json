@@ -22,16 +22,16 @@
             "type": "object",
             "properties": {
                 "modelo": {
-                    "type":"string"
+                    "type": "string"
                 },
                 "objeto": {
-                    "type":"string"
+                    "type": "string"
                 },
                 "posicao": {
-                    "$ref":"#/definitions/instanciacao.orientacao"
+                    "$ref": "#/definitions/instanciacao.orientacao"
                 },
                 "rotacao": {
-                    "$ref":"#/definitions/instanciacao.orientacao"
+                    "$ref": "#/definitions/instanciacao.orientacao"
                 }
             }
         },
@@ -39,13 +39,13 @@
             "type": "array",
             "items": [
                 {
-                    "type":"number"
+                    "type": "number"
                 },
                 {
-                    "type":"number"
+                    "type": "number"
                 },
                 {
-                    "type":"number"
+                    "type": "number"
                 }
             ]
         }
