@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$ref": "#/definitions/JSON_VR",
+    "definitions": {
+        "JSON_VR": {
+            "title": "JSON_VR",
+            "properties": {
+                "library": {"type": "string"},
+                "instances": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/reference.instance"},
+                    "minItems": 0,"additionalItems": true
+                },
+                "relations": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/reference.relation"},
+                    "minItems": 0,"additionalItems": true
+                },
+                "specifications": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/reference.specification"},
+                    "minItems": 0,"additionalItems": true
+                }
+            }
+        },
+        "reference.instance": {
+            "type": "object",
+            "properties": {
+                "model": {"type": "string"},
+                "name": {"type": "string"},
+                "orientation": {"$ref": "#/definitions/content.orientation"}
+            }
+        },
+        "reference.relation": {
+            "type": "object",
+            "properties": {
+                "is_directional": {"type": "boolean"},
+                "targets": {
+                    "type": "array",
+                    "items": [
+                        {"$ref": "#/definitions/content.target"},
+                        {"$ref": "#/definitions/content.target"}
+                    ]
+                },
+                "body": {"$ref": "#/definitions/content.rel_body"}
+            }
+        },
+        "reference.specification": {
+            "type": "object",
+            "properties": {
+                "instance_name": {"type": "string"},
+                "attributes": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/content.attribute"},
+                    "minItems": 0,"additionalItems": true
+                },
+                "target_points": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/content.target_point"},
+                    "minItems": 0,"additionalItems": true
+                }
+            }
+        },
+        "content.orientation": {
+            "type": "object",
+            "properties": {
+                "position": {
+                    "type": "array",
+                    "items": [
+                        {"type": "number"},
+                        {"type": "number"},
+                        {"type": "number"}
+                    ]
+                },
+                "rotation": {
+                    "type": "array",
+                    "items": [
+                        {"type": "number"},
+                        {"type": "number"},
+                        {"type": "number"}
+                    ]
+                }
+            }
+        },
+        "content.target": {
+            "type": "object",
+            "properties": {
+                "instance_name": {"type": "string"},
+                "target_point": {"type": "string"}
+            }
+        },
+        "content.rel_body": {
+            "type": "object",
+            "properties": {
+                "is_implicity": {"type": "boolean"},
+                "model": {"type": "string"}
+            }
+        },
+        "content.attribute": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string"},
+                "type_unit": {"type": "string"},
+                "value": {"type": "string"}
+            }
+        },
+        "content.target_point": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string"},
+                "orientation": {"$ref": "#/definitions/content.orientation"}
+            }
+        }
+    }
+}
