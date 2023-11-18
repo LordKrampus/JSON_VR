@@ -1,0 +1,155 @@
+{
+    "library": "Models/",
+    "instances": [
+        {
+            "model": "disjuntor_gas_t1",
+            "name": "dgt1_01",
+            "orientation": {
+                "position": [
+                    2.0, 0.0, 0.0
+                ],
+                "rotation": [
+                    0.0, 0.0, 0.0
+                ]
+            }
+        },
+        {
+            "model": "disjuntor_gas_t1",
+            "name": "dgt1_02",
+            "orientation": {
+                "position": [
+                    -2.0, 0.0, 0.0
+                ],
+                "rotation": [
+                    0.0, 0.0, 0.0
+                ]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "is_directional": "false",
+            "targets": [
+                {
+                    "instance_name": "dgt1_01",
+                    "target_point": "tg_01"
+                },
+                {
+                    "instance_name": "dgt1_02",
+                    "target_point": "tg_02"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": "false",
+            "targets": [
+                {
+                    "instance_name": "dgt1_02",
+                    "target_point": "tg_01"
+                },
+                {
+                    "instance_name": "dgt1_01",
+                    "target_point": "tg_02"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        }
+    ],
+    "specifications": [
+        {
+            "instance_name": "dgt1_01",
+            "attributes": [
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade Mínima de Descarga",
+                    "type_unit": "kA",
+                    "value": "0"
+                },
+                {
+                    "name": "Classe de Descarga de Linha",
+                    "type_unit": "categórico",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [
+                            0.0, 1.0, 0.0
+                        ],
+                        "rotation": [
+                            0.0, 0.0, 0.0
+                        ]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [
+                            0.0, 2.0, 0.0
+                        ],
+                        "rotation": [
+                            0.0, 0.0, 0.0
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "dgt1_02",
+            "attributes": [
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade Mínima de Descarga",
+                    "type_unit": "kA",
+                    "value": "0"
+                },
+                {
+                    "name": "Classe de Descarga de Linha",
+                    "type_unit": "categórico",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [
+                            0.0, 1.0, 0.0
+                        ],
+                        "rotation": [
+                            0.0, 0.0, 0.0
+                        ]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [
+                            0.0, 2.0, 0.0
+                        ],
+                        "rotation": [
+                            0.0, 0.0, 0.0
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
