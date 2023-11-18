@@ -1,0 +1,673 @@
+{
+    "library": "Models/",
+    "instances": [
+        {
+            "model": "para_raios_t1",
+            "name": "prt1_01",
+            "orientation": {
+                "position": [2.0,0.0,0.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "para_raios_t1",
+            "name": "prt1_02",
+            "orientation": {
+                "position": [-2.0,0.0,0.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "para_raios_t1",
+            "name": "prt1_03",
+            "orientation": {
+                "position": [6.0,0.0,0.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "para_raios_t1",
+            "name": "prt1_04",
+            "orientation": {
+                "position": [-6.0,0.0,0.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "chave_seccionadora_t1",
+            "name": "cst1_01",
+            "orientation": {
+                "position": [2.0,0.0,6.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "chave_seccionadora_t1",
+            "name": "cst1_02",
+            "orientation": {
+                "position": [-2.0,0.0,6.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "chave_seccionadora_t1",
+            "name": "cst1_03",
+            "orientation": {
+                "position": [6.0,0.0,6.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "chave_seccionadora_t1",
+            "name": "cst1_04",
+            "orientation": {
+                "position": [-6.0,0.0,6.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "disjuntor_gas_t1",
+            "name": "djt1_01",
+            "orientation": {
+                "position": [2.0,0.0,12.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "disjuntor_gas_t1",
+            "name": "djt1_02",
+            "orientation": {
+                "position": [-2.0,0.0,12.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "disjuntor_gas_t1",
+            "name": "djt1_03",
+            "orientation": {
+                "position": [6.0,0.0,12.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        },
+        {
+            "model": "disjuntor_gas_t1",
+            "name": "djt1_04",
+            "orientation": {
+                "position": [-6.0,0.0,12.0],
+                "rotation": [0.0,0.0,0.0]
+            }
+        }
+    ],
+    "relations": [
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "prt1_01",
+                    "target_point": "tg_01"
+                },
+                {
+                    "instance_name": "cst1_01",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "cst1_01",
+                    "target_point": "tg_02"
+                },
+                {
+                    "instance_name": "djt1_01",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "prt1_02",
+                    "target_point": "tg_01"
+                },
+                {
+                    "instance_name": "cst1_02",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "cst1_02",
+                    "target_point": "tg_02"
+                },
+                {
+                    "instance_name": "djt1_02",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "prt1_03",
+                    "target_point": "tg_01"
+                },
+                {
+                    "instance_name": "cst1_03",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "cst1_03",
+                    "target_point": "tg_02"
+                },
+                {
+                    "instance_name": "djt1_03",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "prt1_04",
+                    "target_point": "tg_01"
+                },
+                {
+                    "instance_name": "cst1_04",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        },
+        {
+            "is_directional": false,
+            "targets": [
+                {
+                    "instance_name": "cst1_04",
+                    "target_point": "tg_02"
+                },
+                {
+                    "instance_name": "djt1_04",
+                    "target_point": "tg_01"
+                }
+            ],
+            "body": {
+                "is_implicity": true,
+                "model": null
+            }
+        }
+    ],
+    "specifications": [
+        {
+            "instance_name": "prt1_01",
+            "attributes": [
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade Mínima de Descarga",
+                    "type_unit": "kA",
+                    "value": "0"
+                },
+                {
+                    "name": "Classe de Descarga de Linha",
+                    "type_unit": "categórico",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,9.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,10.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "prt1_02",
+            "attributes": [
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade Mínima de Descarga",
+                    "type_unit": "kA",
+                    "value": "0"
+                },
+                {
+                    "name": "Classe de Descarga de Linha",
+                    "type_unit": "categórico",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,9.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,10.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "prt1_03",
+            "attributes": [
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade Mínima de Descarga",
+                    "type_unit": "kA",
+                    "value": "0"
+                },
+                {
+                    "name": "Classe de Descarga de Linha",
+                    "type_unit": "categórico",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,9.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,10.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "prt1_04",
+            "attributes": [
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade Mínima de Descarga",
+                    "type_unit": "kA",
+                    "value": "0"
+                },
+                {
+                    "name": "Classe de Descarga de Linha",
+                    "type_unit": "categórico",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,9.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,10.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "cst1_01",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,7.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,8.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "cst1_02",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,7.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,8.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "cst1_03",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,7.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,8.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "cst1_04",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,7.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,8.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "djt1_01",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,8.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,9.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "djt1_02",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,8.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,9.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "djt1_03",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,8.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,9.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        },
+        {
+            "instance_name": "djt1_04",
+            "attributes": [
+                {
+                    "name": "Tensão Máxima",
+                    "type_unit": "kV",
+                    "value": "0"
+                },
+                {
+                    "name": "Tensão Nominal",
+                    "type_unit": "A",
+                    "value": "0"
+                },
+                {
+                    "name": "Capacidade de Interrupção",
+                    "type_unit": "kA",
+                    "value": "0"
+                }
+            ],
+            "target_points": [
+                {
+                    "name": "tg_01",
+                    "orientation": {
+                        "position": [0.0,8.1,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                },
+                {
+                    "name": "tg_02",
+                    "orientation": {
+                        "position": [0.0,9.0,0.0],
+                        "rotation": [0.0,0.0,0.0]
+                    }
+                }
+            ]
+        }
+    ]
+}
